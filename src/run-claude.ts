@@ -52,6 +52,11 @@ export function prepareRunConfig(
     claudeArgs.push(...customArgs);
   }
 
+  // Add MCP configuration if provided
+  if (options.mcpConfig?.trim()) {
+    claudeArgs.push("--mcp-config", options.mcpConfig);
+  }
+
   // BASE_ARGS are always appended last (cannot be overridden)
   claudeArgs.push(...BASE_ARGS);
 

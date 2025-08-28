@@ -24,6 +24,10 @@ inputs:
     description: "Additional arguments to pass directly to Claude CLI (e.g., '--max-turns 3 --mcp-config /path/to/config.json')"
     required: false
     default: ""
+  mcp_config:
+    description: "MCP configuration as JSON string or path to MCP configuration JSON file"
+    required: false
+    default: ""
 
   # Authentication settings
   anthropic_api_key:
