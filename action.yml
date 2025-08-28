@@ -128,6 +128,7 @@ runs:
         INPUT_PROMPT_FILE: ${{ inputs.prompt_file }}
         INPUT_SETTINGS: ${{ inputs.settings }}
         INPUT_CLAUDE_ARGS: ${{ inputs.claude_args }}
+        INPUT_MCP_CONFIG: ${{ inputs.mcp_config }}
         INPUT_PATH_TO_CLAUDE_CODE_EXECUTABLE: ${{ inputs.path_to_claude_code_executable }}
         INPUT_PATH_TO_BUN_EXECUTABLE: ${{ inputs.path_to_bun_executable }}
 
